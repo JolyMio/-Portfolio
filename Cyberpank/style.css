@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Medium.eot');
+    src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
+        url('BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Medium.woff2') format('woff2'),
+        url('BlenderPro-Medium.woff') format('woff'),
+        url('BlenderPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-ThinItalic.eot');
+    src: local('Blender Pro Thin Italic'), local('BlenderPro-ThinItalic'),
+        url('BlenderPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-ThinItalic.woff2') format('woff2'),
+        url('BlenderPro-ThinItalic.woff') format('woff'),
+        url('BlenderPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Heavy.eot');
+    src: local('Blender Pro Heavy'), local('BlenderPro-Heavy'),
+        url('BlenderPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Heavy.woff2') format('woff2'),
+        url('BlenderPro-Heavy.woff') format('woff'),
+        url('BlenderPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blender Pro Book';
+    src: url('BlenderPro-BookItalic.eot');
+    src: local('Blender Pro Book Italic'), local('BlenderPro-BookItalic'),
+        url('BlenderPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-BookItalic.woff2') format('woff2'),
+        url('BlenderPro-BookItalic.woff') format('woff'),
+        url('BlenderPro-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blender Pro Book';
+    src: url('BlenderPro-Book.eot');
+    src: local('Blender Pro Book'), local('BlenderPro-Book'),
+        url('BlenderPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Book.woff2') format('woff2'),
+        url('BlenderPro-Book.woff') format('woff'),
+        url('BlenderPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Bold.eot');
+    src: local('Blender Pro Bold'), local('BlenderPro-Bold'),
+        url('BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Bold.woff2') format('woff2'),
+        url('BlenderPro-Bold.woff') format('woff'),
+        url('BlenderPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Thin.eot');
+    src: local('Blender Pro Thin'), local('BlenderPro-Thin'),
+        url('BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Thin.woff2') format('woff2'),
+        url('BlenderPro-Thin.woff') format('woff'),
+        url('BlenderPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-MediumItalic.eot');
+    src: local('Blender Pro Medium Italic'), local('BlenderPro-MediumItalic'),
+        url('BlenderPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-MediumItalic.woff2') format('woff2'),
+        url('BlenderPro-MediumItalic.woff') format('woff'),
+        url('BlenderPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-BoldItalic.eot');
+    src: local('Blender Pro Bold Italic'), local('BlenderPro-BoldItalic'),
+        url('BlenderPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-BoldItalic.woff2') format('woff2'),
+        url('BlenderPro-BoldItalic.woff') format('woff'),
+        url('BlenderPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.37), rgba(4, 9, 30, 0.363)),
+    url(./img/fon.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+}
+
+/* .nav-links {
+  flex: 1;
+  text-align: right;
+} */
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  /* position: relative; */
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:  #fcee0a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 36px;
+  font-family: 'Blender Pro';
+  src: url('BlenderPro-Medium.eot');
+  src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
+      url('BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('BlenderPro-Medium.woff2') format('woff2'),
+      url('BlenderPro-Medium.woff') format('woff'),
+      url('BlenderPro-Medium.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 22px;
+  font-family: 'Blender Pro';
+  src: url('BlenderPro-Medium.eot');
+  src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
+      url('BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('BlenderPro-Medium.woff2') format('woff2'),
+      url('BlenderPro-Medium.woff') format('woff'),
+      url('BlenderPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(230, 230, 230);  
+}
+
+.hero-btn {
+  display: inline-block;
+  /* border-radius: 15px; */
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00f0ff;
+  padding: 12px 64px;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 0 0 0 15px ;
+  background-color: #00f0ff;
+  font-family: 'Blender Pro';
+    src: url('BlenderPro-BoldItalic.eot');
+    src: local('Blender Pro Bold Italic'), local('BlenderPro-BoldItalic'),
+        url('BlenderPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-BoldItalic.woff2') format('woff2'),
+        url('BlenderPro-BoldItalic.woff') format('woff'),
+        url('BlenderPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style:normal;
+  font-weight: 700;
+  font-size: 28px;
+
+  /* position: relative; 
+  cursor: pointer; */
+}
+
+.hero-btn:hover {
+  border: 1px solid  #fcee0a;
+  background:  #fcee0a;
+  transition: 1s;
+}
+
+nav .fas {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background:  #fcee0a;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    /* text-align: left; */
+    z-index: 2;    
+    transition: 1s;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    /* cursor: pointer; */
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+
+/* course */
+.bg-course{
+    background-image: url(img/yellow-fon.jpg) ;
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+    /* background-size:contain; */
+    position: relative;
+    /* background-size: cover; */
+    background-size: auto 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bg-course:before{
+background-image: url(img/top-line-yellow-69909c07.svg);
+background-position: top;
+background-repeat: repeat-x;
+bottom: 100%;
+content: "";
+display: block;
+height: 23px;
+left: 0;
+position: absolute;
+right: 0;
+width: 100%;
+}
+.course {
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Blender Pro';
+  color: rgb(0, 0, 0);
+}
+
+p {
+    font-family: 'Blender Pro';
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 10px;
+}
+.course-col{
+    border: 1px solid  #00AAE0;
+    padding: 35px 25px;
+    background-color: #00AAE0;
+    position:relative;
+    width: 200px;
+    height: 250px;
+    font-family: 'Blender Pro';
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col::after{
+    background-image: url(img/razor-bottom-yellow-7dbbe9ac\ 1.svg);
+    color:#00AAE0;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    top: 100%;
+    content: "";
+    display: block;
+    height: 23px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+.cyber{
+border-radius:15px;
+  width: 50%;
+  height: 50%;
+  padding:0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+
+}
+
+
+
+h3 {
+  /* text-align: center; */
+  /* font-weight: 600; */
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }  
+}
+
+/* campus */
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col-img {
+    width: 921.4px;
+    height: 540px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+    
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);  
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* facilities */
+.facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p{
+  padding: 0;
+}
+.facilities-col h3{
+margin: 16px 0 15px;
+}
+/* testimonials */
+.testimonials{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.testimonials-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col img{
+  height: 40px;
+  margin: 0 30px 0 5px;
+  border-radius: 50%;
+}
+.testimonials-col p{
+  padding: 0;
+}
+.testimonials-col h3{
+  margin-top: 15px;
+}
+/* call */
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.cotcety{
+    text-align: center;
+}
+.inform-footer{
+    text-align: center;
+}

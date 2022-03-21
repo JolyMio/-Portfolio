@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk</title>
+  <link rel="stylesheet" href="history.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- header -->
+  
+  <body>
+
+    <!-- header -->
+    
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="characters.html">Characters</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+  
+      <div class="text-box">
+        <h1>История Найт-Сити</h1>
+        <p>Краткая история Найт-Сити. Всё, что нужно знать о вселенной Cyberpunk 2077</p>
+        <a href="inform.html" class="hero-btn">ПОДРОБНЕЕ</a>
+      </div>
+    </header>
+    
+    <main>
+    <section class="facilities">
+        <div class="facilities-col">
+      <h3 class="poph1">Начало</h3>
+      <p class="pop" >История Найт-Сити начинается примерно в это же время — в 1992-м. Тогда у строительного магната Ричарда Найта, разбогатевшего на подрядах от корпораций, родилась мечта построить идеальный мегаполис будущего. Образцовый город, который станет его наследием и примером для будущих поколений.</p>
+    </div>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="./img/history1.jpg" alt="library">
+          <h3>Возможно, криминал</h3>
+         <p> К 2005-му город превратился в филиал ада на земле. Мафия держала Найт-Сити в ежовых рукавицах, и уровень бандитизма достиг исторического максимума: за следующие четыре года здесь произошло больше убийств, чем в других мегаполисах — за десять. Но корпорации, на чьи деньги всё это и было построено, не особенно жаждали спасать горожан.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="./img/history2.jpg" alt="basketball">
+          <h3>Война с Arasaka </h3>
+          <p>При первых же признаках кибер-угрозы Arasaka озаботилась созданием бэкапа. В своём комплексе в Найт-Сити корпорация оборудовала оффлайновое хранилище данных, которое без труда пережило бы эпидемию. Но здесь на сцену вышел рокер Джонни Сильверхэнд — персонаж Киану Ривза. Джонни уже давно точил зуб на Arasaka: в прошлом корпорация похитила его девушку (и гениального хакера) Альт Каннингем и заставила её разработать программу, способную «оцифровать» личность человека, оставив тело в состоянии овоща. Собрав команду головорезов, Сильверхэнд попытался спасти любимую, но опоздал — она стала первой жертвой собственного изобретения. Тело Альт осталось в живых, но её разум был обречён блуждать по Сети.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="./img/history3.jpg" alt="cafeteria">
+          <h3>Возрождение Найт-Сити</h3>
+          <p>К 2069-му Найт-Сити — как и многие другие города мира — более-менее оправился от нанесённого урона: инфраструктура восстановлена, торговля возобновлена, всё больше областей подключается назад к Сети.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="./img/history4.jpg" alt="basketball">
+        </div>
+        
+      </div>
+    </section>
+  
+  <footer>
+    <nav>
+        <a href="index.html">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="characters.html">Characters</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav> 
+    <div class="cotcety">
+        <a href="https://www.youtube.com/"
+        >
+            <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>
+        </a>
+
+        <a href="https://www.youtube.com/">
+            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="insta"/>
+        </a>
+
+        <a href="#" >
+            <img src="https://img.icons8.com/color/48/000000/telegram-app--v2.png" alt="telegramm" />
+        </a>
+    </div>
+    <div class="inform-footer">
+        <p>Cyberpunk 2077®<br> E-mail: dpo@cdprojektred.com</p>
+    </div>
+</footer>
+
+
+<script>
+
+let navLinks = document.getElementById('navLinks');
+function showMenu() {
+  navLinks.style.right = '0';
+}
+function hideMenu() {
+  navLinks.style.right = '-200px';
+}
+
+</script>
+
+<script src="https://kit.fontawesome.com/553acfa497.js" crossorigin="anonymous"></script>
+</main>
+</body>
+</html>
